@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/back_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="224dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nome"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/place_edit"
+        android:hint="Nome"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Telefone"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/place_edit"
+        android:hint="Insira o telefone"
+        app:layout_constraintTop_toBottomOf="@id/Nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/imagem"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/place_edit"
+        android:hint="Insira o link da imagem"
+        app:layout_constraintTop_toBottomOf="@id/Telefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotaoRegistrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/place_button"
+        android:text="@string/btn_texto"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotaoVerLista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/place_button"
+        android:text="Ver a lista de pessoas registradas"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/BotaoRegistrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

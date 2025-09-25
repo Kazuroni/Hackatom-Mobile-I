@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UI</string>
+    <string name="btn_texto">Registrar Pessoa</string>
+    <string name="sem_conta"></string>
+</resources>
